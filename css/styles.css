@@ -1,0 +1,293 @@
+@import url(reset.css);
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/open-sans/OpenSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/open-sans/OpenSans-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/Roboto-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/open-sans/OpenSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/Raleway-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/Raleway-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/Raleway-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/Roboto-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/Raleway-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/Roboto-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/Roboto-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Raleway';
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-menu {
+    background: gold;
+    padding: 25px 0;
+}
+
+.header-menu-item {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.header-menu-item li {
+    position: relative;
+}
+
+.header-menu-item li:hover .header-menu-item-2 {
+    display: block;
+}
+
+.header-menu-item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(14, 89, 76);
+    padding: 20px 20px;
+    background: lightcoral;
+    font-weight: 700;
+    display: block;
+    border: 1px solid peru;
+    border-radius: 13px;
+}
+
+.header-menu-item-2 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    padding: 25px 0 0;
+}
+
+.header-menu-item-2 a {
+    color: royalblue;
+    background: greenyellow;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.header-menu-item-2 li:hover .header-menu-item-3 {
+    display: block;
+}
+
+.header-menu-item-3 {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    display: none;
+}
+
+.header-menu-item-3 a {
+    color: darkorange;
+    background: lightseagreen;
+    font-family: 'Open Sans';
+    font-weight: 700;
+}
+
+.main {
+    background: olive;
+    min-height: 600px;
+    display: flex;
+}
+
+.title {
+    text-align: center;
+    color: aquamarine;
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 26px;
+}
+
+.text-pic {
+    display: flex;
+}
+
+.nice-base {
+    background:lightcyan;
+    }
+    
+    .nice-try {
+        background: peachpuff;
+        padding: 25px;
+    }
+    
+    .nice-try h1 {
+        text-align: center;
+        font-size: 45px;
+        color: darkred;
+    }
+    
+    .tbl {
+        width: 100%;
+        border: 1px solid #771849;
+        overflow: hidden;
+        box-shadow: 0 0 5px 2px grey ;
+        border-radius: 8px;
+        color: #1a1a1a
+    }
+    
+    .tbl th {
+        text-align: left;
+        font-weight: 700;
+        padding: 18px 16px;
+        width: 150;
+        border: 1px solid grey;    
+    }
+    
+    .tbl td {
+        border: 1px solid grey;
+        padding: 8px 16px;
+    }
+    
+    .tbl th + th {
+        width: auto;
+    }
+    
+    .btm {
+        border-radius: 12px;
+        padding: 4px 24px;
+        width: 83px;
+        height: 28px;
+        background: yellowgreen;
+    }
+    
+    .btm.ww {
+        color:red;
+    }
+    
+    .btm.qq {
+        color: blue
+    }
+    
+    .btm.ee {
+        color: indigo;
+    }
+    
+    .btm.rr {
+        color: deeppink;
+    }
+    
+    .mini {
+        font-size: 12px;
+    }
+    
+    .mond td {
+        text-align: center;
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+       }
+    
+    .block1 {
+        background: blue;
+    } 
+    
+     .block2 {
+        background: aqua;
+     }
+    
+    .block3 {
+        background: green;
+    }
+    
+    .block4 {
+        background: lawngreen;
+    }
+    
+    .block5 {
+        background: lightcoral;
+    }
+    
+    .block6 {
+        background: cornflowerblue;
+    }
+    
+    .block7 {
+        background: navy;
+    }
+    
+    .block8 {
+        background: gold;
+    }
