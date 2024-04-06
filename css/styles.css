@@ -111,11 +111,43 @@ body {
     display: flex;
     justify-content: center;
     gap: 40px;
+    white-space: nowrap;
 }
 
 .header-menu-item li {
     position: relative;
 }
+
+.home::before {
+    content: '';
+    position: absolute;
+	top: 10px;
+	left: 0px;
+	width: 30px;
+	height: 30px;
+    background: url(../img/svg/1-1.svg) no-repeat 50% / 20px;
+}
+
+.gallery::before {
+    content: '';
+    position: absolute;
+	top: 10px;
+	left: 0px;
+	width: 30px;
+	height: 30px;
+    background: url(../img/svg/1-2.svg) no-repeat 50% / 20px;
+}
+
+.homeworks::after {
+    content: '';
+    position: absolute;
+	top: 10px;
+	right: 0px;
+	width: 30px;
+	height: 30px;
+    background: url(../img/svg/1-3.svg) no-repeat 50% / 20px;
+}
+
 
 .header-menu-item li:hover .header-menu-item-2 {
     display: block;
@@ -125,7 +157,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     color: rgb(14, 89, 76);
-    padding: 20px 20px;
+    padding: 20px 29px;
     background: lightcoral;
     font-weight: 700;
     display: block;
@@ -166,10 +198,44 @@ body {
     font-weight: 700;
 }
 
+.flex::before {
+    content: '';
+    position: absolute;
+	top: 10px;
+	left: 0px;
+	width: 30px;
+	height: 30px;
+    background: url(../img/svg/2-1.svg) no-repeat 50% / 20px;
+}
+
+
 .main {
-    background: olive;
     min-height: 600px;
+    background-image: url(../img/background.jpg);
+}
+
+.footer {
+    background-color: #771849;
+    min-height: 70px;
+}
+
+.footer-items {
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.footer-items li ::before {
+    content: '';
+    display: inline-block;
+	top: 10px;
+	left: 0px;
+    width: 40px;
+    height: 40px;
+    background: url(../img/svg/android-svgrepo-com.svg) no-repeat 40% / 40px;
+
+
 }
 
 .title {
@@ -181,7 +247,7 @@ body {
 }
 
 .text-pic {
-    display: flex;
+    color: aqua;
 }
 
 .nice-base {
